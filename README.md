@@ -3,9 +3,7 @@
 Versão das plataformas utilizadas no desenvolvimento.
 
 Java JDK 21.0.7
-
 Spring Boot 3.4.5
-
 Apache Maven 3.9.6
 
 É necessária a instalação do Apache Maven e do Java JDK para empacotamento e compilação do software.
@@ -18,7 +16,6 @@ O campo 'spring.datasource.username' deve ser alterado caso o usuário root não
 Baixar os arquivos do projeto. Acessar sua pasta raiz e executar os seguintes comandos:
 
 mvn package
-
 java -jar target/sghss-0.0.1-SNAPSHOT.war
 
 Acessar o localhost na porta 8080 através do navegador (http://localhost:8080).
