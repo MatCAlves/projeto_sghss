@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Gestão de Serviços de Saúde</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sistema de Gestão de Serviços de Saúde</h1>
+            <hr>
+            <form th:action="@{/login}" method="POST">
+                <h2>Login</h2>
+                <p>Insira suas credenciais.</p>
+                <div class="mb-3">
+                    <label class="form-label" for="username">Usuário</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Nome de usuário" autofocus>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="password">Senha</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Senha">
+                </div>
+                <div class="mb-3">
+                    <input class="btn btn-primary" type="submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+    <style>
+        .container {
+            margin-top: 200px;
+            width: 400px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+</html>
